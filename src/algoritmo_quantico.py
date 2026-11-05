@@ -1,7 +1,7 @@
 from qiskit import QuantumCircuit, transpile
 from qiskit_aer import AerSimulator
 
-def algoritmoQuantico():
+def algoritmoQuantico(shots=1000):
     # 1. Criar circuito com 2 qubits e 2 bits classicos
     qc = QuantumCircuit(2, 2);
 
@@ -27,9 +27,13 @@ def algoritmoQuantico():
 
     result = simulator.run(
         compiled,
-        shots=1000
+        shots=shots
     ).result();
 
     # 7. Mostrar resultados
     counts = result.get_counts();
     print("Resultados:", counts);
+    print("Shots executados:", shots);
+    print("Iteracoes de Grover por shot: 1");
+
+    return counts;

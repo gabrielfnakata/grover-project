@@ -10,5 +10,7 @@ def algoritmoClassico():
 
         if elemento == elementoProcurado:
             print("Encontrado:", elemento);
-            print("Tentativas:", tentativas);
+            print("Verificacoes realizadas:", tentativas);
             break;
+
+    return tentativas;
