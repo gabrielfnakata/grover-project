@@ -1,2 +1,2 @@
-from .algoritmo_quantico import algoritmoQuantico
-from .algoritmo_classico import algoritmoClassico
+from .algoritmo_quantico import algoritmoQuantico, superposicaoUniforme
+from .algoritmo_classico import algoritmoClassico, estatisticasClassicas
